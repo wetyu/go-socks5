@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"os"
-	"socks5"
+	"github.com/wetyu/go-socks5"
 )
 
 func main() {
