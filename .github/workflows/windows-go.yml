@@ -5,7 +5,8 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+  workflow_dispatch:
+  
 jobs:
 
   build:
@@ -23,3 +24,7 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+      
+      with:
+          name: Package
+          path: staging
